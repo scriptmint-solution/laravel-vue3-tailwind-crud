@@ -13,6 +13,6 @@ class ProjectListService
     {
         return new ProjectCollection(Project::query()
             ->orderBy('created_at', 'desc')
-            ->paginate(10, ['*'], 'current_page'));
+            ->paginate(20, ['*'], 'current_page'));
     }
 }
