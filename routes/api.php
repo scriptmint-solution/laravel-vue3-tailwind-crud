@@ -15,4 +15,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::apiResource('projects', ProjectController::class);
+Route::prefix('app')->group(function() {
+    Route::apiResource('projects', ProjectController::class);
+});
