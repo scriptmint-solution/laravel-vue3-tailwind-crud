@@ -11,7 +11,6 @@ use Illuminate\Http\Request;
 
 class ProjectController extends Controller
 {
-
     public function index(Request $request, ProjectListService $service)
     {
         return $service->paginate($request);
