@@ -1,5 +1,6 @@
 <template>
-    <div class="flex justify-between px-10 mb-4">
+    <div class="w-full md:max-w-7xl md:mx-auto flex justify-between mb-4">
+        <div></div>
         <BaseButton @click="router.push({name: 'ProjectCreate'})">Add New Project</BaseButton>
     </div>
 
@@ -36,6 +37,11 @@
                                         </DropdownMenu>
                                     </td>
                                 </tr>
+                                <tr v-if="projects.data.length === 0">
+                                    <td colspan="4" class="px-2 py-4 text-sm text-gray-500">
+                                        Could not find any data.
+                                    </td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
@@ -63,7 +69,9 @@ const store = useStore()
 const $loading = inject("$loading");
 
 const loadingContainer = ref(false);
-const projects = reactive({})
+const projects = reactive({
+    data: []
+})
 
 const listItems = () => {
     let loader = $loading.show({ container: loadingContainer.value });
