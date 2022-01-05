@@ -17,7 +17,9 @@ Vutal includes sample "project" module demonstrating a complete CRUD operation. 
 * Form Validation
 * Loading Indicator
 
-Vutal uses Laravel Requests, Laravel API Resource, Factory & Seeder to perform backend operations. Vutal also uses VueRouter & VueX Store to perform SPA operations. Vutal also offers following basic components:
+Vutal implements Laravel Requests, API Resource, Factory & Seeder to perform backend operations. The controller uses services for various actions to make code neat & clean.
+
+Vutal is written with the composition API and script setup syntax to make your code clean. Also, it loads the route components dynamically using VueRouter. It uses VueX Store to perform API operations. Vutal also offers following basic components:
 
 * Base Input
 * Base Textarea
@@ -35,7 +37,7 @@ npm install
 npm run dev
 ```
 
-Vutal includes Laravel API test which you can run using below command:
+### Testing
 
 ```
 php artisan test

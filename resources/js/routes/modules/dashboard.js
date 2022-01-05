@@ -2,10 +2,10 @@ export default [
     {
         path: 'dashboard',
         name: 'Dashboard',
+        redirect: { name: 'Project' },
         meta: {
             label: 'Dashboard',
             icon: 'fas fa-home'
-        },
-        component: () => import('@views/Pages/Dashboard' /* webpackChunkName: "Pages/Dashboard" */),
+        }
     },
 ]
