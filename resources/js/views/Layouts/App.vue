@@ -11,7 +11,7 @@
                 </div>
 
                 <div class="flex items-center space-x-4">
-                    <a href="https://github.com/scriptmintsolution/laravel-vue3-tailwind-crud"><i class="fab fa-github fa-2x"></i></a>
+                    <a href="https://github.com/scriptmintsolution/laravel-vue3-tailwind-crud" target="_blank"><i class="fab fa-github fa-2x"></i></a>
                 </div>
             </div>
 
