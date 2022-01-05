@@ -1,10 +1,10 @@
 const mix = require('laravel-mix');
-require('laravel-mix-purgecss');
 
 var plugin =  'resources/plugins/';
 const path = require('path');
 const webpack = require('webpack');
 const tailwindcss = require('tailwindcss');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 mix.browserSync({
     proxy: process.env.APP_URL,
@@ -18,23 +18,8 @@ mix.js('resources/js/app.js', 'public/js')
         processCssUrls: false,
         postCss: [ tailwindcss('./tailwind.config.js') ],
     })
-    .purgeCss({
-        content: [
-            "node_modules/**/*.vue",
-            './resources/**/*.blade.php',
-            './resources/**/*.js',
-            './resources/**/*.vue',
-        ],
-        css: [],
-        whitelistPatterns: [
-            /^Vue-Toastification/,
-            /^nprogress/,
-            /^vld/,
-        ],
-        enabled: mix.inProduction()
-        // enabled: false
-    })
     .combine('resources/plugins/css/*.scss', 'public/css/plugins.css')
+    .copyDirectory('resources/public', 'public')
     .webpackConfig({
         devtool: "cheap-module-source-map",
         plugins: [],

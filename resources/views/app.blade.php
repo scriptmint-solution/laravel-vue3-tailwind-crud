@@ -8,7 +8,7 @@
         <meta name="author" content="ScriptMint">
         <title>Laravel, VueJS, Tailwind SPA CRUD</title>
         <meta name="csrf-token" content="{{ csrf_token() }}" />
-        <link rel="icon" href="https://scriptmint.com/images/favicons/favicon.ico" type="image/png">
+        <link rel="icon" href="/images/favicon.ico" type="image/png">
 
         <link href="{{ mix('/css/app.css') }}" rel="stylesheet">
         <link href="{{ mix('/css/plugins.css') }}" rel="stylesheet">
