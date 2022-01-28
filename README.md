@@ -29,7 +29,7 @@ Vutal is written with the composition API and script setup syntax to make your c
 * Base Card
 
 ```
-git clone https://github.com/scriptmint-solution/laravel-vue3-tailwind-crud.git vutal
+git clone https://github.com/scriptmintsolution/laravel-vue3-tailwind-crud.git vutal
 cd vutal
 composer install
 php artisan migrate // Make sure you update database details in .env
