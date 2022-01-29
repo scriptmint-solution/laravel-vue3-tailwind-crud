@@ -1,7 +1,7 @@
 <template>
     <div class="flex flex-col bg-gray-50 h-screen">
         <div></div>
-        <!-- <div class=" bg-indigo-900 text-center py-4 lg:px-4">
+        <div class=" bg-indigo-900 text-center py-4 lg:px-4">
             <a href="https://ui.scriptmint.com" target="_blank">
                 <div class="p-2 bg-indigo-800 items-center text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex" role="alert">
                         <span class="flex rounded-full bg-indigo-500 uppercase px-2 py-1 text-xs font-bold mr-3">New</span>
@@ -10,7 +10,7 @@
 
                 </div>
             </a>
-        </div> -->
+        </div>
         <div class="flex-1 overflow-y-auto">
             <div class="px-6 pt-10 flex justify-between">
                 <div class="flex items-center cursor-pointer" @click="router.push({name: 'Dashboard'})">
@@ -22,11 +22,11 @@
 
                 <div class="flex items-center space-x-4">
                     <a href="https://github.com/scriptmintsolution/laravel-vue3-tailwind-crud" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-                    <!-- <a href="https://ui.scriptmint.com" target="_blank">
+                    <a href="https://ui.scriptmint.com" target="_blank">
                         <BaseButton>
                             MintUI Admin Live Demo
                         </BaseButton>
-                    </a> -->
+                    </a>
                 </div>
             </div>
 
